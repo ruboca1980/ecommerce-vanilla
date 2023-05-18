@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /> <!--Boxicons-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> <!--svg Academlo-->
+    <link rel="stylesheet" href="./assets/css/styles.css" /> <!--hoja de estilos-->
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+
+
+  <body class="body">
+    <div class="loading"> 
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+        <title>Academlo</title>
+        <g>
+          <g>
+            <path
+              d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+            </path>
+            <path
+              d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <header class="header__navbar">
+      <nav class="navbar maxContent">
+        <div class="logo">
+          <svg class="logo_nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon">
+            <title>Academlo Logo</title>
+            <g>
+              <g>
+                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                </path>
+              </g>
+            </g>
+          </svg>
+          <span>STORE</span> 
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu__home">Home</a></li>
+          <li><a href="#product" class="menu__product">Products</a></li>
+          <i class='bx bx-x x-menu'></i>
+        </ul>
+        <div class="nav__icons">
+          <i class="bx bx-moon" id="iconTheme"></i>
+          <i class="bx bx-shopping-bag" id="iconShowCart"> 
+            <span class="amountProducts">1</span>
+          </i>
+          <i class="bx handleIconNavbar bxs-dashboard"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="container maxContent">
+      <section id="home" class="home">
+        <div class="home__img">
+          <img src="./assets/img/sweater2.png" alt="imagen home" />
+        </div>
+
+        <div class="home__info">
+          <h2 class="home__info-h2">
+            New Sweatshirt <br />
+            COLLECTIONS 2022
+          </h2>
+
+          <p class="home__info-p">
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+            imported from the 2022 series, with a modern design.
+          </p>
+
+          <p class="home__info-price">$14.00</p>
+
+          <div class="home__info-button">
+            <button class="btn">Show more</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="ecommerce">
+        <div class="ecommerce__filters">
+          <div class="filter" data-filter="all">
+            <h4 class="filter-title">Show all</h4>
+            <p class="filter-text">Show all products</p>
+          </div>
+          <div class="filter" data-filter=".shirt">
+            <h4 class="filter-title">Shirt</h4>
+            <p class="filter-text">7 products</p>
+          </div>
+          <div class="filter" data-filter=".hoddie">
+            <h4 class="filter-title">Hoddie</h4>
+            <p class="filter-text">6 products</p>
+          </div>
+          <div class="filter" data-filter=".sweater">
+            <h4 class="filter-title">Sweater</h4>
+            <p class="filter-text">5 products</p>
+          </div>
+        </div>
+
+        <div class="products"></div>
+
+        
+
+        <div class="cart ">
+          <div class="cart__products"></div>
+          <div class="cart__total">
+            <div class="cart__total-info">
+              <span class="info__amount"></span>
+              <span class="info__total"></span>
+            </div>
+            <button class="btn__buy">Comprar</button>
+          </div>
+          <i class='bx bx-x x-cart'></i>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foother__links maxContent">
+        <div class="foother__link">
+          <h3 class="foother__link-title">Our information</h3>
+          <ul class="links">
+            <li><a href="#">Toluca - México</a></li>
+          </ul>
+        </div>
+
+        <div class="foother__link">
+          <h3 class="foother__link-title">About Us</h3>
+          <ul class="links">
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Copy Right</a></li>
+          </ul>
+        </div>
+
+        <div class="foother__link">
+          <h3 class="foother__link-title">Product</h3>
+          <ul class="links">
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sweatshirts</a></li>
+          </ul>
+        </div>
+
+        <div class="foother__link">
+          <h3 class="foother__link-title">Social</h3>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="bx btn-social bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx btn-social bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx btn-social bxl-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="foother__nameInformation">
+        <p>Carlos Ruiz, ruboca1980@gmail.com </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/mixitup.min.js"></script>
+  </body>
+
+  <!-- 
+
+ -->
+</html>
